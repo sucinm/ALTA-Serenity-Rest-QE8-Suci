@@ -1,5 +1,5 @@
 Feature: Create User
-#  ok
+
   @Latihan1 @PositifCase
   Scenario Outline: Post create new user with valid json
     Given Post create user with valid json

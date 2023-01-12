@@ -16,27 +16,28 @@ public class ReqresAPI {
     public static String LOGIN = Constant.BASE_URL + "/api/login";
 
     @Step("Get list user")
-    public void getListUsers(int page){
+    public void getListUsers(int page) {
         SerenityRest.given()
                 .pathParam("page", page)
                 .get(GET_LIST_USER);
     }
 
     @Step("Get list user")
-    public void getListUsers(String page){
+    public void getListUsers(String page) {
         SerenityRest.given()
                 .pathParam("page", page)
                 .get(GET_LIST_USER);
     }
+
     @Step("Post create user")
-    public void postCreateUser(File json){
+    public void postCreateUser(File json) {
         SerenityRest.given()
                 .contentType(ContentType.JSON)
                 .body(json);
     }
 
     @Step("Put update user by ID")
-    public void putUpdateUser(int id, File json){
+    public void putUpdateUser(int id, File json) {
         SerenityRest.given()
                 .pathParam("id", id)
                 .contentType(ContentType.JSON)
@@ -44,20 +45,20 @@ public class ReqresAPI {
     }
 
     @Step("Delete user")
-    public void deleteUser(int id){
+    public void deleteUser(int id) {
         SerenityRest.given()
                 .pathParam("id", id);
     }
 
     @Step("Register user")
-    public void registerUser(File json){
+    public void registerUser(File json) {
         SerenityRest.given()
                 .contentType(ContentType.JSON)
                 .body(json);
     }
 
     @Step("Login user")
-    public void loginUser(File json){
+    public void loginUser(File json) {
         SerenityRest.given()
                 .contentType(ContentType.JSON)
                 .body(json);

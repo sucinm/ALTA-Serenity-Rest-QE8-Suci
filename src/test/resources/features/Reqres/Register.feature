@@ -1,5 +1,5 @@
 Feature: Register user
-#  ok
+
   @Tugas @PositifCase
   Scenario: Register user with valid json
     Given Register user with valid json

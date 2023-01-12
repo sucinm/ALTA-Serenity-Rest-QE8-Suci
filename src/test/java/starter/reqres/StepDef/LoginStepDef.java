@@ -17,7 +17,7 @@ public class LoginStepDef {
 
     @Given("Login user with valid json")
     public void loginUserWithValidJson() {
-        File json = new File(Constant.JSON_REQUEST+"/RequestLogin.json");
+        File json = new File(Constant.JSON_REQUEST + "/RequestLogin.json");
         reqresAPI.loginUser(json);
     }
 
@@ -33,6 +33,7 @@ public class LoginStepDef {
                 .assertThat()
                 .body(JsonSchemaValidator.matchesJsonSchema(jsonSchema));
     }
+
     @Given("Login user with invalid json")
     public void loginUserWithInvalidJson() {
         File json = new File(Constant.JSON_REQUEST + "/InvalidRequestLogin.json");

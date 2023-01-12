@@ -32,10 +32,9 @@ public class ListUserStepDef {
     public void getListUserWithPage(String page) {
         reqresAPI.getListUsers(page);
     }
+
     @When("Send request get list user")
     public void sendRequestGetListUser() {
         SerenityRest.when().get(ReqresAPI.GET_LIST_USER);
     }
-
-
 }

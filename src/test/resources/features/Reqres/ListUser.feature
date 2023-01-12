@@ -1,5 +1,5 @@
 Feature: List User
-#  ok
+
   @Latihan1 @PositifCase
   Scenario Outline: Get list user with valid parameter page
     Given Get list user with page <page>

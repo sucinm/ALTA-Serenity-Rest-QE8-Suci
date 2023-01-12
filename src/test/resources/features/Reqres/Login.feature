@@ -1,5 +1,5 @@
 Feature: Login user
-#  ok
+
   @Tugas @PositifCase
   Scenario: Login user with registered users and match input email and password
     Given Login user with valid json

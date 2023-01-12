@@ -21,7 +21,7 @@ public class GeneralStepDef {
     @And("Response body page should be {int}")
     public void responseBodyPageShouldBe(int page) {
         SerenityRest.then()
-                .body(ReqresResponses.PAGE,equalTo(page));
+                .body(ReqresResponses.PAGE, equalTo(page));
     }
 
     @And("Response body name should be {string} and job {string}")

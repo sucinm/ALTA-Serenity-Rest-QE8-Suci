@@ -26,6 +26,7 @@ public class UpdateUserStepDef {
         File json = new File(Constant.JSON_REQUEST + "/InvalidRequestUser.json");
         reqresAPI.putUpdateUser(id, json);
     }
+
     @When("Send request put update user")
     public void sendRequestPutUpdateUser() {
         SerenityRest.when().put(ReqresAPI.PUT_UPDATE_USER);

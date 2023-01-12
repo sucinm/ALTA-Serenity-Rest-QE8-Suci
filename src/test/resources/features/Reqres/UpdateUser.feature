@@ -1,5 +1,5 @@
 Feature: Update user
-#  ok
+
   @Latihan1 @PositifCase
   Scenario Outline: Put update user with valid json
     Given Put update user with valid json with id 2
