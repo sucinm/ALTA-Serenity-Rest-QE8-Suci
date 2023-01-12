@@ -1,12 +1,15 @@
 Feature: Register user
-  @Tugas
+#  ok
+  @Tugas @PositifCase
   Scenario: Register user with valid json
     Given Register user with valid json
     When Send request register user
     Then Should return status code 200
+    And Validate json schema success register user
 
-  @Tugas
+  @Tugas @NegatifCase
   Scenario: Register user with invalid json
     Given Register user with invalid json
     When Send request register user
     Then Should return status code 400
+    And Validate json schema failed register user

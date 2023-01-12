@@ -1,5 +1,6 @@
 Feature: Delete user
-  @Latihan1
+#  ok
+  @Latihan1 @PositifCase
   Scenario Outline: Delete user with valid id
     Given Delete user with valid id <id>
     When Send request delete user
@@ -8,7 +9,7 @@ Feature: Delete user
       |id|
       |2 |
 
-  @Tugas
+  @Tugas @NegatifCase
   Scenario Outline: Delete user with unregister user id
     Given Delete user with invalid id <id>
     When Send request delete user
