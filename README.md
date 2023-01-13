@@ -8,6 +8,6 @@ For more information about Serenity BDD, you can read the [**Serenity BDD Book**
 * [**Serenity BDD Blog**](https://johnfergusonsmart.com/category/serenity-bdd/) - regular articles about Serenity BDD
 * [**The Serenity Dojo**](https://www.serenity-dojo.com) - Tailored BDD and Test Automation Training and Mentoring
 
-* Clone This Template From https://github.com/serenity-bdd/serenity-rest-starter
+** Clone This Template From https://github.com/serenity-bdd/serenity-rest-starter
 * Convert json to json schema ? https://www.liquid-technologies.com/online-json-to-schema-converter
 * Maven repository: https://mvnrepository.com/
