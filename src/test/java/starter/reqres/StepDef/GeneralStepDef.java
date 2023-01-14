@@ -4,7 +4,9 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Steps;
+import org.hamcrest.CoreMatchers;
 import starter.reqres.ReqresAPI;
+import starter.reqres.Utils.Constant;
 import starter.reqres.Utils.ReqresResponses;
 
 import static org.hamcrest.Matchers.equalTo;
@@ -29,5 +31,11 @@ public class GeneralStepDef {
         SerenityRest.then()
                 .body(ReqresResponses.NAME, equalTo(name))
                 .body(ReqresResponses.JOB, equalTo(job));
+    }
+
+    @And("Response body error should be {string}")
+    public void responseBodyErrorShouldBe(String errorMessage) {
+        SerenityRest.then()
+                .body(Constant.ERROR, CoreMatchers.equalTo(errorMessage));
     }
 }

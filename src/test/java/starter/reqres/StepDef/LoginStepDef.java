@@ -11,6 +11,8 @@ import starter.reqres.Utils.Constant;
 
 import java.io.File;
 
+import static org.hamcrest.CoreMatchers.equalTo;
+
 public class LoginStepDef {
     @Steps
     ReqresAPI reqresAPI;

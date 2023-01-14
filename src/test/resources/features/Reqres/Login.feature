@@ -12,4 +12,6 @@ Feature: Login user
     Given Login user with invalid json
     When Send request login user
     Then Should return status code 400
+    And Response body error should be "Missing password"
     And Validate json schema failed login user
+

@@ -12,4 +12,5 @@ Feature: Register user
     Given Register user with invalid json
     When Send request register user
     Then Should return status code 400
+    And Response body error should be "Missing password"
     And Validate json schema failed register user
